@@ -1,2 +1,41 @@
 /* big screen -nav bar on the left, always visible
  one media quesry at least*/
+html{
+    width: 100vw;
+}
+body{
+    margin: unset;
+    width: 100vw;
+}
+#main-doc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#documentation-title{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+header{
+    font-size: 22px
+}
+
+.links-list{
+    list-style: none;
+    border: 2px solid black;
+    border-left: none;
+    padding-left: 0;
+}
+
+.link{
+    padding: 19px;
+    border-bottom: 1px solid black;
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+}
+
