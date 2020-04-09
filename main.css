@@ -20,7 +20,9 @@ body{
 }
 
 header{
-    font-size: 22px
+    font-size: 22px;
+    font-weight: 600;
+    text-align: left;
 }
 
 .links-list{
@@ -58,7 +60,7 @@ background: #b30000;
 } */
 
 .link{
-    padding: 22px;
+    padding: 12px;
     padding-right: 0;
     border-bottom: 1px solid black;
 }
@@ -68,3 +70,17 @@ a {
     color: grey;
 }
 
+.content-section{
+    width: 75%;
+    margin: auto;
+
+}
+
+code{
+    background:#eee;
+    border-radius: 3px;
+    padding: 0 8px;
+}
+.main-section header{
+    text-align: left;
+}
