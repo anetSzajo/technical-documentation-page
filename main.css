@@ -1,12 +1,13 @@
-/* big screen -nav bar on the left, always visible
- one media quesry at least*/
 html{
     width: 100vw;
 }
+
 body{
     margin: unset;
     width: 100vw;
+    overflow-x: hidden;
 }
+
 #main-doc{
     width: 100%;
     display: flex;
@@ -37,7 +38,6 @@ header{
 
 
 /*scrollbar styling*/
-
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -53,11 +53,6 @@ border-radius: 8px;
 background: rgb(185, 181, 181); 
 border-radius: 8px;
 }
-/* 
-Handle on hover
-::-webkit-scrollbar-thumb:hover {
-background: #b30000; 
-} */
 
 .link{
     padding: 13px 0 13px 2rem;
@@ -72,7 +67,6 @@ a {
 .content-section{
     width: 75%;
     margin: auto;
-
 }
 
 code{
@@ -80,6 +74,7 @@ code{
     border-radius: 3px;
     padding: 0 8px;
 }
+
 .main-section header{
     text-align: left;
 }
@@ -104,10 +99,13 @@ code{
         height: 100%;
     }
     .content-section{
-        width: 70%;
         margin-left: 310px;
         padding: 2rem;
         font-size: larger;
-        overflow-y: scroll;
+    }
+    
+    /*scrollbar styling*/
+    ::-webkit-scrollbar {
+        width: 15px;
     }
 }
