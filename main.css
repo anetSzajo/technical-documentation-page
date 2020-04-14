@@ -60,9 +60,8 @@ background: #b30000;
 } */
 
 .link{
-    padding: 12px;
-    padding-right: 0;
-    border-bottom: 1px solid black;
+    padding: 13px 0 13px 2rem;
+    border-top: 1px solid black;
 }
 
 a {
@@ -83,4 +82,32 @@ code{
 }
 .main-section header{
     text-align: left;
+}
+
+@media (min-width: 40rem){
+    #main-doc{
+        flex-direction: row;
+    }
+    .links-list{
+        height: 100%;
+        overflow-y: initial;
+        width: 100%;
+        border: none;
+    }
+    #navbar{
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 300px;
+        min-width: 290px;
+        border-right: 4px solid #ccc;
+        height: 100%;
+    }
+    .content-section{
+        width: 70%;
+        margin-left: 310px;
+        padding: 2rem;
+        font-size: larger;
+        overflow-y: scroll;
+    }
 }
